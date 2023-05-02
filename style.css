@@ -405,6 +405,14 @@ canvas {
 }
 
 a {
+  font-family: 'PP';
+  letter-spacing: -1.5px;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.end {
   font-family: 'PP2';
   letter-spacing: -1.5px;
   color: #ffffff;
