@@ -133,6 +133,7 @@ main {
 @media (max-width: 1000px) {
 
   .cursor {
+    display: none;
     width: 0;
     height: 0;
     outline: 0px solid #ffffff;
@@ -144,6 +145,7 @@ main {
 @media (max-width: 1000px) {
 
   .cursor.active {
+    display: none;
     width: 0;
     height: 0;
     outline: 0px solid #ffffff;
@@ -384,7 +386,7 @@ canvas {
   justify-content: space-between;
   background-color: #000000;
   border-bottom: #3b3b3b 1px solid;
-  z-index: 10;
+
   position: relative;
   height: fit-content;
 
