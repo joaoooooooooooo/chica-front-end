@@ -130,7 +130,26 @@ main {
 
 }
 
+@media (max-width: 1000px) {
 
+  .cursor {
+    width: 0;
+    height: 0;
+    outline: 0px solid #ffffff;
+    pointer-events: none;
+  }
+}
+
+
+@media (max-width: 1000px) {
+
+  .cursor.active {
+    width: 0;
+    height: 0;
+    outline: 0px solid #ffffff;
+    pointer-events: none;
+  }
+}
 
 .cursor.active {
   width: 50px;
