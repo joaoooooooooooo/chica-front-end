@@ -130,7 +130,7 @@ fetch(apiUrl)
             // add event listener to item container
             parentContainer.addEventListener('click', () => {
                 const itemId = item.id;
-                window.location.href = `marcar.html?id=${itemId}`;
+                window.location.href = `https://chica-front-end.onrender.com/marcar.html?id=${itemId}`;
             });
         });
     });
