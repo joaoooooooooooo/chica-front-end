@@ -386,7 +386,7 @@ canvas {
   justify-content: space-between;
   background-color: #000000;
   border-bottom: #3b3b3b 1px solid;
-
+  z-index: 10;
   position: relative;
   height: fit-content;
 
