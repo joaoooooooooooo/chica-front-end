@@ -92,6 +92,7 @@ fetch(apiUrl)
         data.data.forEach(item => {
             const description = document.createElement('div');
             description.className = 'description';
+            const line = document.createElement('div')
             const parentContainer = document.createElement('div');
             parentContainer.className = 'containerE';
             const imageContainer = document.createElement('div');
@@ -192,7 +193,8 @@ fetch(`https://strapi-rpjc.onrender.com/api/ensaios/${itemId}?populate=%2A`)
 
 let current = 0.1;
 let target = 0;
-let ease = 0.075;
+let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+let ease = isMobile ? 0.2 : 0.075;
 
 // Linear inetepolation used for smooth scrolling and image offset uniform adjustment
 
