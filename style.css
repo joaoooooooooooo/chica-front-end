@@ -407,14 +407,40 @@ canvas {
   z-index: 15;
   position: relative;
   height: fit-content;
+}
 
+@media (max-width: 1000px) {
+  .demo-1__header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
+  .ph-instagram-logo {
+    left: 20px;
+    position: relative;
+    font-size: 2em;
+    width: 50px;
+    color: #e9e9e9;
+    mix-blend-mode: difference;
+    z-index: 18;
+  }
+
+  .favicon {
+    mix-blend-mode: difference;
+    position: relative;
+    width: 5%;
+    min-width: 80px;
+    height: auto;
+    fill: #ffffff;
+    z-index: 18;
+
+  }
 }
 
 .ph-instagram-logo {
   left: 20px;
   position: relative;
-  font-size: 2em;
+  font-size: 1.7em;
   width: 50px;
   color: #e9e9e9;
   mix-blend-mode: difference;
