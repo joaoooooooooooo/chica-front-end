@@ -1,22 +1,15 @@
 @font-face {
-  font-family: "PP";
+  font-family: "PP Writer";
   src:
     url("./fonts/PP3/PPWriter-Thin.woff") format("woff"),
     url("./fonts/PP3/PPWriter-Thin.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "PP2";
+  font-family: "PPNeueMontreal";
   src:
     url("./fonts/PP3/PPNeueMontreal-Thin.woff") format("woff"),
     url("./fonts/PP3/PPNeueMontreal-Thin.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "PP3";
-  src:
-    url("./fonts/PP3/PPEditorialNew-Ultralight.woff") format("woff"),
-    url("./fonts/PP3/PPEditorialNew-Ultralight.otf") format("opentype");
 }
 
 
@@ -37,7 +30,7 @@ body {
 html {
   font-family: 'PP';
   font-family: 'PP2';
-  font-family: 'PP3';
+
   scroll-behavior: initial;
 
   overscroll-behavior: none;
@@ -62,7 +55,7 @@ main {
 
 .ver-ensaio {
 
-  font-family: 'PP';
+  font-family: 'PP Writer';
   font-weight: lighter;
   margin-right: 0;
   font-size: 20px;
@@ -179,8 +172,8 @@ main {
 
 h1 {
 
-  font-family: 'PP2';
-  font-weight: lighter;
+  font-family: 'PPNeueMontreal';
+  font-weight: 800;
   position: absolute;
   left: 0;
   top: 60%;
@@ -193,8 +186,8 @@ h1 {
 
 .descriptionA {
   gap: 2%;
-  font-family: 'PP2';
-  font-weight: normal;
+  font-family: 'PPNeueMontreal2';
+  font-weight: 200;
   position: relative;
   width: 90%;
   height: fit-content;
@@ -236,7 +229,7 @@ h1 {
   position: relative;
   z-index: 1;
   color: #e9e9e9;
-  font-family: 'PP2';
+
 }
 
 
@@ -250,8 +243,8 @@ h1 {
   height: fit-content;
   text-align: center;
   width: 90%;
-  font-family: 'PP2';
-  font-weight: normal;
+  font-family: 'PPNeueMontreal';
+  font-weight: 200;
   position: relative;
   color: #e9e9e9;
   font-size: 1.2em;
@@ -261,7 +254,7 @@ h1 {
 
 .hero-section {
   color: #ffffff;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 
   margin: 15vw;
   display: flex;
@@ -292,13 +285,16 @@ h1 {
 }
 
 h2 {
+  font-family: 'PPNeueMontreal';
+  font-weight: 800;
+  text-decoration: none;
   margin: 0;
   display: flex;
   height: fit-content;
   align-items: center;
   justify-content: center;
-  font-family: 'PP2';
-  font-weight: bolder;
+
+
   font-size: 5vh;
   text-align: center;
 
@@ -307,11 +303,7 @@ h2 {
 
 }
 
-.hero-section h2:nth-child(3) {
 
-  font-family: PP3;
-  font-weight: lighter;
-}
 
 .galerryimage {
   width: auto;
@@ -407,8 +399,8 @@ a {
 }
 
 .end {
-  font-family: 'PP2';
-  font-weight: 300;
+  font-family: 'PPNeueMontreal';
+  font-weight: 800;
   letter-spacing: normal;
   color: #ffffff;
   text-decoration: none;
@@ -521,6 +513,7 @@ a:hover {
 
 
 .links ul {
+  font-family: 'PP Writer';
   text-align: center;
   font-size: 6vw;
   line-height: 1;
