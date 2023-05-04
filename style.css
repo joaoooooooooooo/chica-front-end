@@ -90,7 +90,7 @@ main {
   width: 95%;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 15px;
   height: fit-content;
 
   display: flex;
@@ -340,7 +340,7 @@ h2 {
   width: auto;
   height: fit-content;
   max-height: 50vw;
-  min-height: 300px;
+  min-height: 200px;
   transition: 0.5s;
   position: relative;
 
@@ -458,7 +458,6 @@ a {
 
 .end {
   font-family: 'PP2';
-  font-weight: lighter;
   letter-spacing: normal;
   color: #ffffff;
   text-decoration: none;
