@@ -1,12 +1,12 @@
 @font-face {
   font-family: "PP";
-  src: url("./fonts/PPWriter-Thin.woff") format("opentype");
+  src: url("./fonts/PP3/PPWriter-Thin.woff") format("opentype");
 
 }
 
 @font-face {
   font-family: "PP2";
-  src: url("./fonts/PPNeueMontreal-Thin.woff") format("opentype");
+  src: url("./fonts/PP3/PPNeueMontreal-Thin.woff") format("opentype");
 }
 
 @font-face {
@@ -535,7 +535,7 @@ a:hover {
   opacity: 1;
   pointer-events: none;
   transform: translateY(120%);
-  transition: 1s ease-out;
+  transition: 0.8s ease-out;
   display: flex;
   align-content: space-between;
   flex-wrap: nowrap;
