@@ -352,13 +352,21 @@ class MeshItem {
 init()
 new EffectCanvas()
 
-function handleInteraction(event) {
-    event.preventDefault(); // Prevents scrolling while interacting with the menu
-    toggleMenu();
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const menuTog = document.querySelector('.menu-tog');
+    const menu = document.querySelector('.menu');
+    const wraps = document.querySelectorAll('.menu-wrap');
 
-menuTog.addEventListener('click', handleInteraction);
-menuTog.addEventListener('touchstart', handleInteraction);
+    function handleInteraction(event) {
+        event.preventDefault(); // Prevents scrolling while interacting with the menu
+        toggleMenu();
+    }
+
+    menuTog.addEventListener('click', handleInteraction);
+    menuTog.addEventListener('touchend', handleInteraction);
+
+    // The rest of your JavaScript code remains unchanged
+});
 menuTog.addEventListener('click', toggleMenu)
 
 function displayWraps() {
