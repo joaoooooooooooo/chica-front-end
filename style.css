@@ -680,7 +680,7 @@ a:hover {
 
 
 
-@media (max-width: 600px) {
+@media (max-width:500px) {
   .container {
     justify-content: center;
     gap: 15px;
@@ -697,7 +697,7 @@ a:hover {
   }
 }
 
-@media (max-width:600px) {
+@media (max-width:500px) {
 
   .links ul {
 
@@ -714,7 +714,7 @@ a:hover {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
 
   .containerE:nth-child(even)>.description {
     justify-content: space-between;
@@ -742,7 +742,7 @@ a:hover {
     font-size: 20px;
   }
 
-  @media (max-width:600px) {
+  @media (max-width:500px) {
 
     .cursor {
       display: none;
@@ -761,7 +761,7 @@ a:hover {
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 500px) {
 
     .demo-1__header {
 

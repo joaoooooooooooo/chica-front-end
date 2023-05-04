@@ -104,7 +104,7 @@ fetch(apiUrl)
             function updateImages() {
                 imageContainer.innerHTML = '';
                 const screenWidth = window.innerWidth;
-                const maxImages = screenWidth < 1000 ? 2 : 4;
+                const maxImages = screenWidth < 600 ? 2 : 3;
 
                 for (let i = 0; i < maxImages && i < imageUrls.length; i++) {
                     const imgElement = document.createElement('img');
