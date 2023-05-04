@@ -207,7 +207,7 @@ fetch(`https://strapi-rpjc.onrender.com/api/ensaios/${itemId}?populate=%2A`)
 let current = 0.1;
 let target = 0;
 let isMobile = /iPhone|iPod|iPad|Android/i.test(navigator.userAgent);
-let ease = isMobile ? 1 : 0.075;
+let ease = isMobile ? 0.11 : 0.075;
 
 // Linear inetepolation used for smooth scrolling and image offset uniform adjustment
 
