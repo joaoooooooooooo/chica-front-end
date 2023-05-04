@@ -264,7 +264,7 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -298,7 +298,7 @@ h2 {
 
   text-align: center;
 
-  width: 85%;
+  width: 90%;
   color: #ffffff;
 
 }
@@ -399,15 +399,16 @@ a {
 }
 
 .marcar {
+  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
-  pointer-events: none;
+
 }
 
 .end {
 
-
+  pointer-events: none;
   width: 100%;
   margin-bottom: 2%;
   height: fit-content;
@@ -434,8 +435,28 @@ a {
 
 
   text-align: center;
+  transition: 0.5s ease-in-out;
+  width: 100%;
 
-  width: 85%;
+
+}
+
+.dois:hover {
+  font-family: "PP Writer";
+  font-weight: lighter;
+  font-style: italic;
+  text-decoration: none;
+  margin: 0;
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+
+  transition: 0.5s ease-in-out;
+  text-align: center;
+
+  width: 100%;
 
 
 }
