@@ -90,13 +90,25 @@ main {
   width: 95%;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 40px;
   height: fit-content;
 
   display: flex;
 
   flex-direction: row-reverse;
   flex-wrap: wrap
+}
+
+@media (max-width: 900px) {
+  .container {
+    gap: 15px;
+  }
+
+  .galerryimage {
+    height: 24vw;
+    min-height: 300px;
+
+  }
 }
 
 .containerA {
@@ -144,10 +156,6 @@ main {
     outline: 0px solid #ffffff;
     pointer-events: none;
   }
-}
-
-
-@media (max-width: 1000px) {
 
   .cursor.active {
     display: none;
@@ -157,6 +165,8 @@ main {
     pointer-events: none;
   }
 }
+
+
 
 .cursor.active {
   width: 50px;
@@ -234,8 +244,17 @@ h1 {
 @media (max-width: 1000px) {
 
   .description {
-
     justify-content: space-between;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .hero-section {
+    margin: 30vw;
+    letter-spacing: 1px;
+    font-size: 30px;
   }
 }
 
@@ -252,11 +271,7 @@ h1 {
   font-family: 'PP2';
 }
 
-@media (max-width: 1000px) {
-  .title {
-    font-size: 40px;
-  }
-}
+
 
 .title span {
   font-size: 30px;
@@ -293,14 +308,7 @@ h1 {
 }
 
 
-@media (max-width: 1000px) {
 
-  .hero-section {
-    margin: 30vw;
-    letter-spacing: 1px;
-    font-size: 30px;
-  }
-}
 
 .ChicaChicaChica {
 
@@ -595,7 +603,7 @@ a:hover {
   }
 
   .links ul:hover {
-    padding: 10px;
+    padding: 0px;
 
 
   }
