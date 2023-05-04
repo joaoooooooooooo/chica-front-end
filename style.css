@@ -255,12 +255,12 @@ h1 {
 .hero-section {
   color: #ffffff;
   letter-spacing: -1px;
-
+  font-size: 4vh;
   margin: 15vw;
   display: flex;
   width: 98%;
   height: fit-content;
-  font-size: 45px;
+  display: flex;
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
@@ -295,10 +295,10 @@ h2 {
   justify-content: center;
 
 
-  font-size: 5vh;
+
   text-align: center;
 
-  width: 100%;
+  width: 73%;
   color: #ffffff;
 
 }
@@ -401,8 +401,15 @@ a {
 .end {
   font-family: "PPNeueMontreal";
   font-weight: 400;
-
+  width: 100%;
   color: #ffffff;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+
+
+  display: flex;
+  text-align: center;
 
   transition: 0.3s;
 }
@@ -729,68 +736,68 @@ a:hover {
     font-size: 40px;
   }
 
+
   .hero-section {
-    margin: 30vw;
-
-    font-size: 30px;
-  }
-}
-
-@media (max-width:600px) {
-
-  .cursor {
-    display: none;
-    width: 0;
-    height: 0;
-    outline: 0px solid #ffffff;
-    pointer-events: none;
+    letter-spacing: normal;
+    font-size: 20px;
   }
 
-  .cursor.active {
-    display: none;
-    width: 0;
-    height: 0;
-    outline: 0px solid #ffffff;
-    pointer-events: none;
-  }
-}
+  @media (max-width:600px) {
 
-@media (max-width: 600px) {
+    .cursor {
+      display: none;
+      width: 0;
+      height: 0;
+      outline: 0px solid #ffffff;
+      pointer-events: none;
+    }
 
-  .demo-1__header {
-
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    overflow: hidden;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    background-color: #000000;
-    border-bottom: #3b3b3b 1px solid;
-    z-index: 15;
-    position: relative;
-    height: fit-content;
+    .cursor.active {
+      display: none;
+      width: 0;
+      height: 0;
+      outline: 0px solid #ffffff;
+      pointer-events: none;
+    }
   }
 
-  .favicon {
-    min-width: 80px;
-  }
+  @media (max-width: 600px) {
 
-  .menu-tog {
-    mix-blend-mode: difference;
-    position: relative;
+    .demo-1__header {
 
-    z-index: 1001;
-    width: 60px;
-    height: 40px;
-    display: flex;
-    flex-direction: column;
-    cursor: none;
-    gap: 20%;
-    align-items: center;
-    justify-content: center;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      overflow: hidden;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      background-color: #000000;
+      border-bottom: #3b3b3b 1px solid;
+      z-index: 15;
+      position: relative;
+      height: fit-content;
+    }
+
+    .favicon {
+      min-width: 80px;
+    }
+
+    .menu-tog {
+      mix-blend-mode: difference;
+      position: relative;
+
+      z-index: 1001;
+      width: 60px;
+      height: 40px;
+      display: flex;
+      flex-direction: column;
+      cursor: none;
+      gap: 20%;
+      align-items: center;
+      justify-content: center;
 
 
+    }
   }
 }
