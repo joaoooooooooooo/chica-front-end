@@ -352,7 +352,13 @@ class MeshItem {
 init()
 new EffectCanvas()
 
+function handleInteraction(event) {
+    event.preventDefault(); // Prevents scrolling while interacting with the menu
+    toggleMenu();
+}
 
+menuTog.addEventListener('click', handleInteraction);
+menuTog.addEventListener('touchstart', handleInteraction);
 menuTog.addEventListener('click', toggleMenu)
 
 function displayWraps() {

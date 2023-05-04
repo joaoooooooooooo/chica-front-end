@@ -37,6 +37,9 @@ html {
 
 }
 
+
+
+
 main {
   scroll-behavior: initial;
   display: flex;
@@ -406,7 +409,7 @@ canvas {
 
 a {
   font-family: 'PP';
-  letter-spacing: -1.5px;
+  letter-spacing: -1px;
   color: #000000;
   text-decoration: none;
   transition: 0.3s;
