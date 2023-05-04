@@ -715,3 +715,43 @@ a:hover {
     pointer-events: none;
   }
 }
+
+@media (max-width: 1000px) {
+
+  .demo-1__header {
+
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    border-bottom: #3b3b3b 1px solid;
+    z-index: 15;
+    position: relative;
+    height: fit-content;
+  }
+
+  .favicon {
+    min-width: 80px;
+  }
+
+  .menu-tog {
+    mix-blend-mode: difference;
+    position: relative;
+
+    z-index: 1001;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    cursor: none;
+    gap: 20%;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+}
