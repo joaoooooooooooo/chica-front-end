@@ -298,7 +298,7 @@ h2 {
 
   text-align: center;
 
-  width: 73%;
+  width: 80%;
   color: #ffffff;
 
 }
@@ -717,12 +717,12 @@ a:hover {
 @media (max-width: 600px) {
 
   .containerE:nth-child(even)>.description {
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: row-reverse;
   }
 
   .containerE:nth-child(odd)>.description {
-    justify-content: flex-start;
+    justify-content: space-between;
 
 
 
@@ -738,7 +738,7 @@ a:hover {
 
 
   .hero-section {
-    letter-spacing: normal;
+
     font-size: 20px;
   }
 
