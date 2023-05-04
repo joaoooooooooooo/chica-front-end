@@ -386,15 +386,12 @@ canvas {
   overflow: hidden;
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #000000;
   border-bottom: #3b3b3b 1px solid;
   z-index: 15;
   position: relative;
   height: fit-content;
-  flex-wrap: nowrap;
-  flex-direction: row-reverse;
-  align-content: center;
 
 
 }
@@ -435,7 +432,7 @@ a:hover {
 .menu-tog {
   mix-blend-mode: difference;
   position: relative;
-  top: 50%;
+
   z-index: 1001;
   width: 70px;
   height: 50px;
