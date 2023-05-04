@@ -297,7 +297,8 @@ h2 {
   height: fit-content;
   align-items: center;
   justify-content: center;
-  font-family: PP2;
+  font-family: 'PP2';
+  font-weight: bolder;
   font-size: 5vh;
   text-align: center;
 
