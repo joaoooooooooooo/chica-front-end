@@ -534,7 +534,7 @@ a:hover {
   z-index: 1;
   opacity: 1;
   pointer-events: none;
-  transform: translateY(100%);
+  transform: translateY(120%);
   transition: 1s ease-out;
   display: flex;
   align-content: space-between;
