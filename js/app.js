@@ -9,6 +9,15 @@ const menuWraps = [...document.querySelectorAll('.menu-wrap')];
 let scrollable = document.querySelector('.scrollable');
 
 
+function handleInteraction(event) {
+    event.preventDefault(); // Prevents scrolling while interacting with the menu
+    toggleMenu();
+}
+
+menuTog.addEventListener('pointerup', handleInteraction);
+
+
+
 // http://localhost:1337/api/no-sofas
 
 const root = document.querySelector('html')
@@ -352,21 +361,7 @@ class MeshItem {
 init()
 new EffectCanvas()
 
-document.addEventListener('DOMContentLoaded', () => {
-    const menuTog = document.querySelector('.menu-tog');
-    const menu = document.querySelector('.menu');
-    const wraps = document.querySelectorAll('.menu-wrap');
 
-    function handleInteraction(event) {
-        event.preventDefault(); // Prevents scrolling while interacting with the menu
-        toggleMenu();
-    }
-
-    menuTog.addEventListener('click', handleInteraction);
-    menuTog.addEventListener('touchend', handleInteraction);
-
-    // The rest of your JavaScript code remains unchanged
-});
 menuTog.addEventListener('click', toggleMenu)
 
 function displayWraps() {
