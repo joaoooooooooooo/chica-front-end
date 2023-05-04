@@ -78,7 +78,7 @@ main {
   position: absolute;
   align-items: center;
   justify-content: center;
-  margin-top: 2vh;
+  margin-top: 6vh;
   display: flex;
   flex-direction: column;
   height: fit-content;
@@ -204,7 +204,7 @@ h1 {
 .description {
 
   gap: 5%;
-
+  margin-bottom: 1%;
   position: relative;
   width: 90%;
   height: fit-content;
@@ -399,19 +399,38 @@ a {
 }
 
 .end {
-  font-family: "PPNeueMontreal";
-  font-weight: 400;
+
+
   width: 100%;
-  color: #ffffff;
+
   height: fit-content;
   align-items: center;
   justify-content: center;
-
-
   display: flex;
   text-align: center;
-
   transition: 0.3s;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.dois {
+  font-family: "PP Writer";
+  font-weight: lighter;
+  font-style: italic;
+  text-decoration: none;
+  margin: 0;
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  color: #757575;
+
+
+  text-align: center;
+
+  width: 85%;
+
+
 }
 
 a:hover {
@@ -605,7 +624,7 @@ a:hover {
   height: fit-content;
   overflow: visible;
   flex-wrap: wrap;
-
+  gap: 2%;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -676,8 +695,9 @@ a:hover {
 
 }
 
-
-
+.dois {
+  font-family: "PP Writer";
+}
 
 
 @media (max-width:500px) {
@@ -716,21 +736,6 @@ a:hover {
 
 @media (max-width: 500px) {
 
-  .containerE:nth-child(even)>.description {
-    justify-content: space-between;
-    flex-direction: row-reverse;
-  }
-
-  .containerE:nth-child(odd)>.description {
-    justify-content: space-between;
-
-
-
-  }
-
-  .description {
-    justify-content: space-between;
-  }
 
   .title {
     font-size: 40px;
