@@ -497,7 +497,7 @@ a:hover {
 }
 
 .links {
-
+  text-align: center;
   z-index: 10;
   width: auto;
   position: fixed;
@@ -508,7 +508,7 @@ a:hover {
 
 
 .links ul {
-
+  text-align: center;
   font-size: 6vw;
   line-height: 1;
   height: 20vh;
@@ -657,7 +657,7 @@ a:hover {
 
   .galerryimage {
     height: 24vw;
-    min-height: 300px;
+    min-height: 250px;
 
   }
 }
@@ -671,7 +671,10 @@ a:hover {
 
   .links ul:hover {
     padding: 0px;
+  }
 
+  .links ul li:hover {
+    padding: 0px;
 
   }
 }
