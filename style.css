@@ -513,7 +513,7 @@ a:hover {
   line-height: 1;
   height: 20vh;
   display: flex;
-  place-content: space-around end;
+  place-content: space-around center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -648,6 +648,7 @@ a:hover {
 
 @media (max-width: 900px) {
   .container {
+    justify-content: center;
     gap: 15px;
   }
 
