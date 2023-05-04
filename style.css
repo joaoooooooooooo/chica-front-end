@@ -29,7 +29,7 @@ body {
 }
 
 html {
-  cursor: none;
+
   scroll-behavior: initial;
   font-family: 'PP';
   overscroll-behavior: none;
