@@ -1,12 +1,12 @@
 @font-face {
   font-family: "PP";
-  src: url("./fonts/PPWriter-Thin.otf") format("opentype");
+  src: url("./fonts/PPWriter-Thin.woff") format("opentype");
 
 }
 
 @font-face {
   font-family: "PP2";
-  src: url("./fonts/PPNeueMontreal-Thin.otf") format("opentype");
+  src: url("./fonts/PPNeueMontreal-Thin.woff") format("opentype");
 }
 
 @font-face {
@@ -21,6 +21,7 @@
 }
 
 body {
+  cursor: none;
   display: flex;
   margin: 0;
   justify-content: center;
@@ -29,7 +30,7 @@ body {
 }
 
 html {
-  cursor: none;
+
   scroll-behavior: initial;
   font-family: 'PP';
   overscroll-behavior: none;
@@ -321,7 +322,7 @@ h2 {
   align-items: center;
   justify-content: center;
 
-
+  font-size: 5vh;
   text-align: center;
 
   width: 100%;
@@ -457,7 +458,7 @@ a {
 
 .end {
   font-family: 'PP2';
-  letter-spacing: -1.5px;
+  letter-spacing: normal;
   color: #ffffff;
   text-decoration: none;
   transition: 0.3s;
