@@ -441,6 +441,19 @@ a {
 
 }
 
+.tres {
+  pointer-events: none;
+}
+
+.tress {
+
+  color: #fdfdfd;
+
+
+
+
+}
+
 .dois:hover {
   font-family: "PP Writer";
   font-weight: lighter;
