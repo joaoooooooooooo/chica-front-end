@@ -178,6 +178,7 @@ main {
 h1 {
 
   font-family: 'PP2';
+  font-weight: lighter;
   position: absolute;
   left: 0;
   top: 60%;
@@ -191,6 +192,7 @@ h1 {
 .descriptionA {
   gap: 2%;
   font-family: 'PP2';
+  font-weight: normal;
   position: relative;
   width: 90%;
   height: fit-content;
@@ -247,6 +249,7 @@ h1 {
   text-align: center;
   width: 90%;
   font-family: 'PP2';
+  font-weight: normal;
   position: relative;
   color: #e9e9e9;
   font-size: 1.2em;
@@ -258,6 +261,7 @@ h1 {
   color: #ffffff;
   letter-spacing: -2px;
   font-family: 'PP2';
+  font-weight: normal;
   text-align: center;
   margin: 15vw;
   display: flex;
@@ -403,6 +407,7 @@ a {
 
 .end {
   font-family: 'PP2';
+  font-weight: normal;
   letter-spacing: normal;
   color: #ffffff;
   text-decoration: none;
