@@ -35,6 +35,22 @@ function setPosition(element, e) {
 
 
 
+document.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("mouseenter", () => {
+        cursor.classList.add("active");
+    });
+    link.addEventListener("mouseleave", () => {
+        cursor.classList.remove("active");
+    });
+});
+document.querySelectorAll(".menu-tog").forEach((link) => {
+    link.addEventListener("mouseenter", () => {
+        cursor.classList.add("active");
+    });
+    link.addEventListener("mouseleave", () => {
+        cursor.classList.remove("active");
+    });
+});
 fetch(' https://strapi-rpjc.onrender.com/api/no-sofas?populate=%2A')
     .then(response => response.json())
     .then(data => {
@@ -335,12 +351,7 @@ class MeshItem {
 
 init()
 new EffectCanvas()
-function handleInteraction(event) {
-    event.preventDefault(); // Prevents scrolling while interacting with the menu
-    toggleMenu();
-}
 
-menuTog.addEventListener('pointerup', handleInteraction);
 
 menuTog.addEventListener('click', toggleMenu)
 
