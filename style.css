@@ -1,17 +1,22 @@
 @font-face {
   font-family: "PP";
-  src: url("./fonts/PP3/PPWriter-Thin.woff") format("woff");
-
+  src:
+    url("./fonts/PP3/PPWriter-Thin.woff") format("woff"),
+    url("./fonts/PP3/PPWriter-Thin.otf") format("opentype");
 }
 
 @font-face {
   font-family: "PP2";
-  src: url("./fonts/PP3/PPNeueMontreal-Thin.woff") format("woff");
+  src:
+    url("./fonts/PP3/PPNeueMontreal-Thin.woff") format("woff"),
+    url("./fonts/PP3/PPNeueMontreal-Thin.otf") format("opentype");
 }
 
 @font-face {
   font-family: "PP3";
-  src: url("./fonts/PP3/PPEditorialNew-Ultralight.woff") format("woff");
+  src:
+    url("./fonts/PP3/PPEditorialNew-Ultralight.woff") format("woff"),
+    url("./fonts/PP3/PPEditorialNew-Ultralight.otf") format("opentype");
 }
 
 
@@ -669,7 +674,7 @@ a:hover {
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .container {
     justify-content: center;
     gap: 15px;
@@ -686,7 +691,7 @@ a:hover {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width:600px) {
 
   .links ul {
 
@@ -703,9 +708,11 @@ a:hover {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
 
-
+  .description {
+    justify-content: space-between;
+  }
 
   .title {
     font-size: 40px;
@@ -718,7 +725,7 @@ a:hover {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width:600px) {
 
   .cursor {
     display: none;
@@ -737,7 +744,7 @@ a:hover {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
 
   .demo-1__header {
 
