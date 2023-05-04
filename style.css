@@ -180,8 +180,7 @@ main {
 h1 {
 
   font-family: 'PP2';
-  font-weight: 400;
-  font-variant: normal;
+  font-weight: lighter;
   position: absolute;
   left: 0;
   top: 60%;
@@ -263,9 +262,7 @@ h1 {
 .hero-section {
   color: #ffffff;
   letter-spacing: -2px;
-  font-family: 'PP2';
-  font-weight: normal;
-  text-align: center;
+
   margin: 15vw;
   display: flex;
   width: 98%;
@@ -300,7 +297,7 @@ h2 {
   height: fit-content;
   align-items: center;
   justify-content: center;
-
+  font-family: PP2;
   font-size: 5vh;
   text-align: center;
 
@@ -410,8 +407,7 @@ a {
 
 .end {
   font-family: 'PP2';
-  font-weight: 400;
-  font-variant: normal;
+  font-weight: 300;
   letter-spacing: normal;
   color: #ffffff;
   text-decoration: none;
