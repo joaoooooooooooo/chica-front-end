@@ -340,7 +340,7 @@ h2 {
   width: auto;
   height: fit-content;
   max-height: 50vw;
-  min-height: 200px;
+  min-height: 300px;
   transition: 0.5s;
   position: relative;
 
@@ -458,6 +458,7 @@ a {
 
 .end {
   font-family: 'PP2';
+  font-weight: lighter;
   letter-spacing: normal;
   color: #ffffff;
   text-decoration: none;
