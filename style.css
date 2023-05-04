@@ -400,7 +400,7 @@ a {
 
 .end {
   font-family: 'PPNeueMontreal';
-  font-weight: 800;
+  font-weight: bolder;
   letter-spacing: normal;
   color: #ffffff;
   text-decoration: none;
@@ -708,6 +708,18 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+
+  .containerE:nth-child(even)>.description {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+  }
+
+  .containerE:nth-child(odd)>.description {
+    justify-content: flex-start;
+
+
+
+  }
 
   .description {
     justify-content: space-between;
