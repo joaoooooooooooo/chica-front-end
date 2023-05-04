@@ -35,7 +35,9 @@ body {
 }
 
 html {
-
+  font-family: 'PP';
+  font-family: 'PP2';
+  font-family: 'PP3';
   scroll-behavior: initial;
 
   overscroll-behavior: none;
@@ -178,7 +180,8 @@ main {
 h1 {
 
   font-family: 'PP2';
-  font-weight: lighter;
+  font-weight: 400;
+  font-variant: normal;
   position: absolute;
   left: 0;
   top: 60%;
@@ -407,7 +410,8 @@ a {
 
 .end {
   font-family: 'PP2';
-  font-weight: 300;
+  font-weight: 400;
+  font-variant: normal;
   letter-spacing: normal;
   color: #ffffff;
   text-decoration: none;
