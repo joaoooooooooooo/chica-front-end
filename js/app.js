@@ -84,7 +84,6 @@ fetch(' https://strapi-rpjc.onrender.com/api/no-sofas?populate=%2A')
         });
     });
 const apiUrl = 'https://strapi-rpjc.onrender.com/api/ensaios?populate=%2A';
-
 fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
@@ -92,7 +91,7 @@ fetch(apiUrl)
         data.data.forEach(item => {
             const description = document.createElement('div');
             description.className = 'description';
-            const line = document.createElement('div')
+
             const parentContainer = document.createElement('div');
             parentContainer.className = 'containerE';
             const imageContainer = document.createElement('div');
@@ -101,18 +100,27 @@ fetch(apiUrl)
             // create image elements
             const attributes = item.attributes;
             const imageUrls = attributes.fotos.data.map(foto => foto.attributes.url);
-            for (let i = 0; i < 4 && i < imageUrls.length; i++) {
-                const imgElement = document.createElement('img');
-                imgElement.className = 'galerryimageE';
-                imgElement.src = imageUrls[i];
-                imageContainer.appendChild(imgElement);
 
+            function updateImages() {
+                imageContainer.innerHTML = '';
+                const screenWidth = window.innerWidth;
+                const maxImages = screenWidth < 1000 ? 2 : 4;
+
+                for (let i = 0; i < maxImages && i < imageUrls.length; i++) {
+                    const imgElement = document.createElement('img');
+                    imgElement.className = 'galerryimageE';
+                    imgElement.src = imageUrls[i];
+                    imageContainer.appendChild(imgElement);
+                }
             }
+
+            updateImages(); // Call the function to initially display the images
+            window.addEventListener('resize', updateImages); // Update the images when the screen is resized
 
             // create text element
             const verEnsaio = document.createElement('a');
             verEnsaio.className = 'ver-ensaio';
-            verEnsaio.innerText = 'Ver ensaio completo';
+            verEnsaio.innerText = 'ver ensaio completo   ↗';
             const textElement = document.createElement('h2');
             textElement.innerText = `${attributes.nome}`;
             textElement.className = 'title';
@@ -120,10 +128,9 @@ fetch(apiUrl)
             // append text element to image container div
             description.appendChild(textElement);
 
-
             // append image container to main container
             parentContainer.appendChild(description);
-            description.appendChild(verEnsaio)
+            description.appendChild(verEnsaio);
             parentContainer.appendChild(imageContainer);
             const mainContainer = document.getElementById('scrollableE');
             mainContainer.appendChild(parentContainer);
