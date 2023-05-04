@@ -400,10 +400,10 @@ a {
 
 .end {
   font-family: "PPNeueMontreal";
-  font-weight: 200;
+  font-weight: 400;
 
   color: #ffffff;
-  text-decoration: none;
+
   transition: 0.3s;
 }
 
