@@ -398,6 +398,10 @@ a {
   transition: 0.3s;
 }
 
+.marcar {
+  pointer-events: none;
+}
+
 .end {
 
 
