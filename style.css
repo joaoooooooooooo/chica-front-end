@@ -369,7 +369,7 @@ canvas {
   mix-blend-mode: difference;
   position: relative;
   width: 5%;
-  min-width: 150px;
+  min-width: 80px;
   height: auto;
   fill: #ffffff;
   z-index: 18;
@@ -590,7 +590,7 @@ a:hover {
 }
 
 .menu-wrap span {
-  font-size: 2.5vh;
+
   color: rgb(0, 0, 0);
 }
 
