@@ -11,46 +11,52 @@ let scrollable = document.querySelector('.scrollable');
 
 // http://localhost:1337/api/no-sofas
 
-const root = document.querySelector('html')
+function initDesktopFeatures() {
+    const root = document.querySelector('html');
 
-// Real cursor element
-const cursor = document.createElement('div')
-cursor.classList.add('cursor')
-root.appendChild(cursor)
+    // Real cursor element
+    const cursor = document.createElement('div');
+    cursor.classList.add('cursor');
+    root.appendChild(cursor);
 
-// Following extra cursor element
-const follower = document.createElement('div')
-follower.classList.add('cursor', 'cursor__follower')
-root.appendChild(follower)
+    // Following extra cursor element
+    const follower = document.createElement('div');
+    follower.classList.add('cursor', 'cursor__follower');
+    root.appendChild(follower);
 
+    root.addEventListener('mousemove', (e) => {
+        setPosition(follower, e);
+        setPosition(cursor, e);
+    });
 
-root.addEventListener('mousemove', (e) => {
-    setPosition(follower, e)
-    setPosition(cursor, e)
-})
+    function setPosition(element, e) {
+        element.style.transform = `translate3d(${e.clientX - 14}px, ${e.clientY - 17}px, 0)`;
+    }
 
-function setPosition(element, e) {
-    element.style.transform = `translate3d(${e.clientX - 14}px, ${e.clientY - 17}px, 0)`
+    document.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+            cursor.classList.add("active");
+        });
+        link.addEventListener("mouseleave", () => {
+            cursor.classList.remove("active");
+        });
+    });
+    document.querySelectorAll(".menu-tog").forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+            cursor.classList.add("active");
+        });
+        link.addEventListener("mouseleave", () => {
+            cursor.classList.remove("active");
+        });
+    });
 }
 
+let isMobile2 = /iPhone|iPod|iPad|Android/i.test(navigator.userAgent);
 
-
-document.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("mouseenter", () => {
-        cursor.classList.add("active");
-    });
-    link.addEventListener("mouseleave", () => {
-        cursor.classList.remove("active");
-    });
-});
-document.querySelectorAll(".menu-tog").forEach((link) => {
-    link.addEventListener("mouseenter", () => {
-        cursor.classList.add("active");
-    });
-    link.addEventListener("mouseleave", () => {
-        cursor.classList.remove("active");
-    });
-});
+// Check if the current device is not a mobile device
+if (!isMobile2) {
+    initDesktopFeatures();
+}
 fetch(' https://strapi-rpjc.onrender.com/api/no-sofas?populate=%2A')
     .then(response => response.json())
     .then(data => {
